@@ -1,17 +1,16 @@
-
 import 'package:flutter/material.dart';
-import 'screens/home.dart';
 
-void main() => runApp(StudyPilotApp());
+void main() => runApp(MyApp());
 
-class StudyPilotApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'StudyPilot',
-      theme: ThemeData.dark(),
-      home: HomeScreen(),
-      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(title: Text('StudyPilot')),
+        body: Center(child: Text('Welcome to StudyPilot!')),
+      ),
     );
   }
 }
