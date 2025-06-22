@@ -48,7 +48,7 @@ workflows:
     publishing:
       email:
         recipients:
-          - your@email.com
+          - iamsmarajit@outlook.com
         notify:
           success: true
           failure: true
