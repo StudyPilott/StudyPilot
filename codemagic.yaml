@@ -1,0 +1,30 @@
+
+workflows:
+  react-native-app:
+    name: React Native Android & iOS Build
+    max_build_duration: 60
+    environment:
+      groups:
+        - react-native
+      node: 20.11.1
+      npm: 10.5.0
+      xcode: latest
+      java: 17
+      flutter: stable
+    scripts:
+      - name: Install dependencies
+        script: |
+          flutter pub get
+      - name: Build Android APK (Release)
+        script: |
+          flutter clean
+          flutter build apk --release
+    artifacts:
+      - build/app/outputs/flutter-apk/app-release.apk
+    publishing:
+      email:
+        recipients:
+          - iamsmarajit@outlook.com
+      notify:
+        on_success: true
+        on_failure: true
