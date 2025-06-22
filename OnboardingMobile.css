@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;500&family=Poppins:wght@400;600&display=swap');
+
+.onboard-mobile-root {
+  min-height: 100vh;
+  width: 100vw;
+  font-family: 'Poppins', 'Montserrat', Arial, sans-serif;
+  position: relative;
+  background: var(--onboard-bg, #f6f8fa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.onboard-mobile-gradient {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(145deg, #e0e9ff 0%, #c3fff3 43%, #e9f0fb 90%);
+  background-blend-mode: multiply;
+}
+.onboard-mobile-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 380px;
+  margin: auto;
+  background: rgba(255,255,255,0.97);
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px rgba(90,180,255,0.13), 0 2px 8px rgba(70,200,180,0.10);
+  padding: 2.2rem 1.3rem 2.7rem 1.3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.onboard-mobile-logo {
+  width: 78px; height: 78px;
+  margin: 0 auto 1.1rem auto;
+  display: flex; align-items: center; justify-content: center;
+}
+.onboard-mobile-headline {
+  font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.55rem;
+  margin: 0 0 0.7rem 0;
+  color: #3d3d65;
+  line-height: 1.23;
+}
+.sp-brand {
+  color: #59cdff;
+  font-weight: 700;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.onboard-mobile-subtext {
+  font-size: 1.05rem;
+  color: #64648a;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+.onboard-mobile-illustration {
+  margin: 0.7rem 0 1.5rem 0;
+  width: 100%;
+  max-width: 220px;
+  min-height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.onboard-mobile-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #6a8cff 30%, #59cdff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 1.7rem;
+  font-size: 1.18rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 600;
+  padding: 0.95rem 0;
+  margin-top: 1.1rem;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 2px 16px rgba(80,180,255,0.07);
+  transition: background 0.18s;
+  cursor: pointer;
+}
+.onboard-mobile-btn:active,
+.onboard-mobile-btn:hover {
+  background: linear-gradient(90deg, #59cdff 25%, #6a8cff 100%);
+}
+.onboard-mobile-google {
+  width: 100%;
+  background: #fff;
+  color: #333;
+  border: 1.3px solid #e0e9ff;
+  border-radius: 1.7rem;
+  font-size: 1.06rem;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 0;
+  box-shadow: 0 1px 8px rgba(120,210,255,0.09);
+  transition: border 0.13s, box-shadow 0.15s;
+  cursor: pointer;
+}
+.onboard-mobile-google:active,
+.onboard-mobile-google:hover {
+  border: 1.7px solid #59cdff;
+  box-shadow: 0 3px 14px rgba(80,180,255,0.08);
+}
+@media (max-width: 480px) {
+  .onboard-mobile-content {
+    max-width: 99vw;
+    border-radius: 0.8rem;
+    padding: 1.4rem 0.6rem 2rem 0.6rem;
+  }
+  .onboard-mobile-logo { width: 62px; height: 62px; }
+  .onboard-mobile-headline { font-size: 1.13rem; }
+}
