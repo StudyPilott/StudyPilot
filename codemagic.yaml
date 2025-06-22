@@ -42,14 +42,14 @@ workflows:
       #     xcodebuild -exportArchive -archivePath $CM_BUILD_DIR/YourApp.xcarchive -exportOptionsPlist ExportOptions.plist -exportPath $CM_BUILD_DIR/YourApp
       #     cd ..
     artifacts:
-      - android/app/build/outputs/**/*.apk
+            - build/app/outputs/flutter-apk/app-release.apk
       - ios/build/Build/Products/Release-iphonesimulator/*.app
       # - $CM_BUILD_DIR/YourApp/*.ipa # Uncomment if exporting .ipa above
 
     publishing:
       email:
         recipients:
-          - your@email.com
+          - iamsmarajit@outlook.com
         notify:
           success: true
           failure: true
