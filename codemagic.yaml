@@ -41,7 +41,7 @@ workflows:
       #     xcodebuild -exportArchive -archivePath $CM_BUILD_DIR/YourApp.xcarchive -exportOptionsPlist ExportOptions.plist -exportPath $CM_BUILD_DIR/YourApp
       #     cd ..
     artifacts:
-     -android/app/build/outputs/apk/release/app-release.apk
+  - android/app/build/outputs/apk/release/app-release.apk
       # - $CM_BUILD_DIR/YourApp/*.ipa # Uncomment if exporting .ipa above
 
     publishing:
