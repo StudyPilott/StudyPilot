@@ -5,7 +5,6 @@ workflows:
     environment:
       groups:
         - react-native
-      vars:
         # Example: Add your own API keys here
         # API_URL: $API_URL
       node: 20.11.1
@@ -49,7 +48,7 @@ workflows:
     publishing:
       email:
         recipients:
-          - your@email.com
+          - iamsmarajit@outlook
         notify:
           success: true
           failure: true
